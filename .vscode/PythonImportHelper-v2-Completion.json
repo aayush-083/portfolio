@@ -1,0 +1,37 @@
+[
+    {
+        "label": "FER",
+        "importPath": "fer",
+        "description": "fer",
+        "isExtraImport": true,
+        "detail": "fer",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "cap",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "cap = cv2.VideoCapture(0)\ndetector = FER(mtcnn=True)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detect emotions\n    emotions = detector.detect_emotions(frame)\n    # Show results\n    if emotions:",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "detector",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "detector = FER(mtcnn=True)\nwhile True:\n    ret, frame = cap.read()\n    if not ret:\n        break\n    # Detect emotions\n    emotions = detector.detect_emotions(frame)\n    # Show results\n    if emotions:\n        top_emotion, score = detector.top_emotion(frame)",
+        "detail": "main",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aayush Kataria | Software Developer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #020617, #0f172a);
+      color: white;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 18px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(2, 6, 23, 0.85);
+      z-index: 1000;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #38bdf8;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 100px;
+    }
+
+    .hero-left {
+      padding: 80px;
+    }
+
+    .hero-left h1 {
+      font-size: 48px;
+    }
+
+    .hero-left span {
+      color: #38bdf8;
+    }
+
+    .hero-left p {
+      margin: 25px 0;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .hero-buttons button {
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 12px;
+    }
+
+    .btn-primary {
+      background: #38bdf8;
+      color: #020617;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    /* RIGHT SIDE PHOTO */
+    .hero-right {
+      background-image: url("AAYUSH PHOTO.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 80px;
+      background: #f8fafc;
+      color: #020617;
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 36px;
+      display: flex;
+      align-items: center;
+    }
+
+    h2 i {
+      color: #38bdf8;
+      margin-right: 12px;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+    }
+
+    .skill {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .skill i {
+      font-size: 36px;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+
+    /* PROJECTS */
+    .project {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      line-height: 1.7;
+    }
+
+    /* RESUME LINK */
+    .resume-link {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .resume-link a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .resume-link a:hover {
+      text-decoration: underline;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #020617;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-left {
+        padding: 50px 30px;
+      }
+
+      .hero-right {
+        height: 60vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <h2>Aayush Kataria</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="resume.pdf" target="_blank">Resume</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-left">
+    <h1>Hello, I’m <span>Aayush Kataria</span></h1>
+    <p>
+      Software Developer with strong foundations in Python, DBMS, Web Development,
+      Machine Learning, and secure system design.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="resume.pdf" target="_blank">
+        <button class="btn-primary">View Resume</button>
+      </a>
+      <a href="#projects">
+        <button class="btn-secondary">View Projects</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-right"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2><i class="fa-solid fa-user"></i> About Me</h2>
+  <p>
+    I am a B.Tech IT student with hands-on experience in Python development, machine learning,
+    cybersecurity concepts, and backend systems. I enjoy building real-world applications
+    with clean, maintainable code.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2><i class="fa-solid fa-laptop-code"></i> Technical Skills</h2>
+  <div class="skills">
+    <div class="skill"><i class="fa-brands fa-python"></i><p>Python</p></div>
+    <div class="skill"><i class="fa-solid fa-database"></i><p>DBMS / SQL</p></div>
+    <div class="skill"><i class="fa-solid fa-brain"></i><p>Machine Learning</p></div>
+    <div class="skill"><i class="fa-solid fa-chart-line"></i><p>Data Science</p></div>
+    <div class="skill"><i class="fa-brands fa-html5"></i><p>HTML</p></div>
+    <div class="skill"><i class="fa-brands fa-css3-alt"></i><p>CSS</p></div>
+    <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+    <div class="skill"><i class="fa-solid fa-code"></i><p>C / C++</p></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+
+  <div class="project">
+    <h3>Binance Futures Trading Bot</h3>
+    <p>
+      Built a Python-based trading bot for Binance Futures Testnet supporting Market and Limit orders
+      via a CLI interface. Implemented structured logging, input validation, and robust error handling.
+      Designed the project with a modular and reusable architecture.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>Lock n Trust – Secure File Vault</h3>
+    <p>
+      Developed a secure file vault system using Python, Tkinter, AES-GCM encryption, and PBKDF2-based
+      key derivation. Implemented encrypted file chunking and indexing for secure storage.
+      Planned AI-based anomaly detection and password strength analysis.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>MRI Brain Tumour Detection with CNN</h3>
+    <p>
+      Built a CNN-based model for brain tumour detection from MRI scans using TensorFlow and OpenCV.
+      Applied image preprocessing and data augmentation to improve accuracy and robustness.
+      Visualized predictions using Matplotlib.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>EggnHealthCare – Healthcare Management System</h3>
+    <p>
+      Developed a healthcare management system using Java Servlets, JDBC, and MySQL.
+      Implemented user authentication, appointment scheduling, and automated report generation.
+      Deployed on Apache Tomcat with a dynamic HTML/CSS frontend.
+    </p>
+  </div>
+
+  <div class="project">
+    <h3>PCA–KMeans Clustering Pipeline</h3>
+    <p>
+      Implemented PCA from scratch to reduce dimensionality of datasets.
+      Developed a custom K-Means clustering algorithm for classification.
+      Visualized clustering results using Matplotlib for analysis.
+    </p>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <h2><i class="fa-solid fa-file-pdf"></i> Resume</h2>
+  <p class="resume-link">
+    👉 <a href="resume.pdf" target="_blank">Click here to view my Resume (PDF)</a>
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+  <p>Email: aayushkataria008@gmail.com</p>
+  <p>Phone: +91-9027532257</p>
+</section>
+
+<footer>
+  © 2026 Aayush Kataria | Software Developer
+</footer>
+
+</body>
+</html>
