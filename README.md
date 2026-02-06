@@ -21,8 +21,8 @@ The design focuses on a clean UI, structured layout, and responsive behavior for
 
 ## 🛠️ Technologies Used
 
-- HTML5  
-- CSS3  
+- HTML
+- CSS  
 - Font Awesome Icons  
 - Google Fonts (Poppins)
 
@@ -40,7 +40,7 @@ The design focuses on a clean UI, structured layout, and responsive behavior for
 - Contact information section
 - Clean and professional UI design
 
----
 
-## 📂 Project Structure
+
+
 
